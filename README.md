@@ -15,6 +15,7 @@ Zulfiqar Rahman Aji (05111942000019)
 ## SOAL 1
 
 **a. Show The Information From Syslog.log**
+
 In number 1A, we need to collect the information from syslog.log. The information includes, log type (INFO/ERROR), log messages, and the username on each log line.
 ```
 cat syslog.log|cut -d ":" -f4
