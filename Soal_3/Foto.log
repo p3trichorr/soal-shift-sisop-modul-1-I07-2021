@@ -1,0 +1,345 @@
+--2021-03-27 15:56:35--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 172.67.170.91, 104.21.47.37, 2606:4700:3037::ac43:aa5b, ...
+Connecting to loremflickr.com (loremflickr.com)|172.67.170.91|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50728393223_1a1af90bc8_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:42--  https://loremflickr.com/cache/resized/65535_50728393223_1a1af90bc8_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16676 (16K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_1.jpg’
+
+     0K .......... ......                                     100%  483K=0,03s
+
+2021-03-27 15:56:42 (483 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_1.jpg’ saved [16676/16676]
+
+--2021-03-27 15:56:42--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:43--  https://loremflickr.com/cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 9565 (9,3K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_2.jpg’
+
+     0K .........                                             100%  539K=0,02s
+
+2021-03-27 15:56:44 (539 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_2.jpg’ saved [9565/9565]
+
+--2021-03-27 15:56:44--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50940116651_143d4f1fd1_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:45--  https://loremflickr.com/cache/resized/65535_50940116651_143d4f1fd1_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 17250 (17K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_3.jpg’
+
+     0K .......... ......                                     100% 2,96M=0,006s
+
+2021-03-27 15:56:45 (2,96 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_3.jpg’ saved [17250/17250]
+
+--2021-03-27 15:56:45--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50726320363_9a94f00468_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:47--  https://loremflickr.com/cache/resized/65535_50726320363_9a94f00468_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 7336 (7,2K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_4.jpg’
+
+     0K .......                                               100% 13,2M=0,001s
+
+2021-03-27 15:56:47 (13,2 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_4.jpg’ saved [7336/7336]
+
+--2021-03-27 15:56:47--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50718454988_5c5a99ec02_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:48--  https://loremflickr.com/cache/resized/65535_50718454988_5c5a99ec02_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16073 (16K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_5.jpg’
+
+     0K .......... .....                                      100%  376K=0,04s
+
+2021-03-27 15:56:49 (376 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_5.jpg’ saved [16073/16073]
+
+--2021-03-27 15:56:49--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50763149878_7c3b98241e_n_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:50--  https://loremflickr.com/cache/resized/65535_50763149878_7c3b98241e_n_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 10423 (10K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_6.jpg’
+
+     0K ..........                                            100% 2,56M=0,004s
+
+2021-03-27 15:56:50 (2,56 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_6.jpg’ saved [10423/10423]
+
+--2021-03-27 15:56:50--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50718454988_5c5a99ec02_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:52--  https://loremflickr.com/cache/resized/65535_50718454988_5c5a99ec02_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16073 (16K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_7.jpg’
+
+     0K .......... .....                                      100%  175K=0,09s
+
+2021-03-27 15:56:52 (175 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_7.jpg’ saved [16073/16073]
+
+--2021-03-27 15:56:52--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50672728116_a39285046f_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:53--  https://loremflickr.com/cache/resized/65535_50672728116_a39285046f_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 15217 (15K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_8.jpg’
+
+     0K .......... ....                                       100% 9,66M=0,002s
+
+2021-03-27 15:56:54 (9,66 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_8.jpg’ saved [15217/15217]
+
+--2021-03-27 15:56:54--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50993026183_b8b2684ec2_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:55--  https://loremflickr.com/cache/resized/65535_50993026183_b8b2684ec2_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 17148 (17K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_9.jpg’
+
+     0K .......... ......                                     100% 10,8M=0,002s
+
+2021-03-27 15:56:56 (10,8 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_9.jpg’ saved [17148/17148]
+
+--2021-03-27 15:56:56--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50741110102_144b41e83d_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:57--  https://loremflickr.com/cache/resized/65535_50741110102_144b41e83d_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12369 (12K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_10.jpg’
+
+     0K .......... ..                                         100% 5,80M=0,002s
+
+2021-03-27 15:56:57 (5,80 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_10.jpg’ saved [12369/12369]
+
+--2021-03-27 15:56:57--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50741110102_144b41e83d_320_240_nofilter.jpg [following]
+--2021-03-27 15:56:58--  https://loremflickr.com/cache/resized/65535_50741110102_144b41e83d_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12369 (12K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_11.jpg’
+
+     0K .......... ..                                         100%  468K=0,03s
+
+2021-03-27 15:56:58 (468 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_11.jpg’ saved [12369/12369]
+
+--2021-03-27 15:56:58--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50961803066_684b9bcdbb_n_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:00--  https://loremflickr.com/cache/resized/65535_50961803066_684b9bcdbb_n_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 11257 (11K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_12.jpg’
+
+     0K ..........                                            100%  671K=0,02s
+
+2021-03-27 15:57:00 (671 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_12.jpg’ saved [11257/11257]
+
+--2021-03-27 15:57:00--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:01--  https://loremflickr.com/cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 9565 (9,3K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_13.jpg’
+
+     0K .........                                             100% 5,22M=0,002s
+
+2021-03-27 15:57:01 (5,22 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_13.jpg’ saved [9565/9565]
+
+--2021-03-27 15:57:01--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:02--  https://loremflickr.com/cache/resized/65535_50638506941_94bafb099d_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 9565 (9,3K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_14.jpg’
+
+     0K .........                                             100%  905K=0,01s
+
+2021-03-27 15:57:02 (905 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_14.jpg’ saved [9565/9565]
+
+--2021-03-27 15:57:02--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50879269166_a865dba592_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:03--  https://loremflickr.com/cache/resized/65535_50879269166_a865dba592_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 23559 (23K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_15.jpg’
+
+     0K .......... .......... ...                             100% 1,84M=0,01s
+
+2021-03-27 15:57:04 (1,84 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_15.jpg’ saved [23559/23559]
+
+--2021-03-27 15:57:04--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50629745583_9b5ddb2c27_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:05--  https://loremflickr.com/cache/resized/65535_50629745583_9b5ddb2c27_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12203 (12K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_16.jpg’
+
+     0K .......... .                                          100% 1,92M=0,006s
+
+2021-03-27 15:57:05 (1,92 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_16.jpg’ saved [12203/12203]
+
+--2021-03-27 15:57:05--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50961803066_684b9bcdbb_n_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:07--  https://loremflickr.com/cache/resized/65535_50961803066_684b9bcdbb_n_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 11257 (11K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_17.jpg’
+
+     0K ..........                                            100% 7,06M=0,002s
+
+2021-03-27 15:57:07 (7,06 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_17.jpg’ saved [11257/11257]
+
+--2021-03-27 15:57:07--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50760058107_fc6b06bcf1_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:08--  https://loremflickr.com/cache/resized/65535_50760058107_fc6b06bcf1_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 9630 (9,4K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_18.jpg’
+
+     0K .........                                             100%  898K=0,01s
+
+2021-03-27 15:57:09 (898 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_18.jpg’ saved [9630/9630]
+
+--2021-03-27 15:57:09--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50634235622_9fcd904ed0_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:10--  https://loremflickr.com/cache/resized/65535_50634235622_9fcd904ed0_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 11773 (11K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_19.jpg’
+
+     0K .......... .                                          100% 25,8M=0s
+
+2021-03-27 15:57:10 (25,8 MB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_19.jpg’ saved [11773/11773]
+
+--2021-03-27 15:57:10--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50862875183_d2731be569_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:11--  https://loremflickr.com/cache/resized/65535_50862875183_d2731be569_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 17436 (17K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_20.jpg’
+
+     0K .......... .......                                    100%  458K=0,04s
+
+2021-03-27 15:57:12 (458 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_20.jpg’ saved [17436/17436]
+
+--2021-03-27 15:57:12--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50672728116_a39285046f_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:13--  https://loremflickr.com/cache/resized/65535_50672728116_a39285046f_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 15217 (15K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_21.jpg’
+
+     0K .......... ....                                       100%  615K=0,02s
+
+2021-03-27 15:57:13 (615 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_21.jpg’ saved [15217/15217]
+
+--2021-03-27 15:57:13--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50845729678_2ed67584d1_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:15--  https://loremflickr.com/cache/resized/65535_50845729678_2ed67584d1_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16070 (16K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_22.jpg’
+
+     0K .......... .....                                      100%  948K=0,02s
+
+2021-03-27 15:57:15 (948 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_22.jpg’ saved [16070/16070]
+
+--2021-03-27 15:57:15--  https://loremflickr.com/320/240/cat
+Resolving loremflickr.com (loremflickr.com)... 104.21.47.37, 172.67.170.91, 2606:4700:3034::6815:2f25, ...
+Connecting to loremflickr.com (loremflickr.com)|104.21.47.37|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /cache/resized/65535_50790404733_c769beb625_320_240_nofilter.jpg [following]
+--2021-03-27 15:57:16--  https://loremflickr.com/cache/resized/65535_50790404733_c769beb625_320_240_nofilter.jpg
+Reusing existing connection to loremflickr.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22275 (22K) [image/jpeg]
+Saving to: ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_23.jpg’
+
+     0K .......... .......... .                               100%  649K=0,03s
+
+2021-03-27 15:57:16 (649 KB/s) - ‘/home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_23.jpg’ saved [22275/22275]
+
