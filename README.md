@@ -57,3 +57,21 @@ done|sed '1 i\Error,Count' > error_message.csv
 ```
 
 To solve the problem from number 1d, I will first declare a new variable named `infoerror` and I use it as a function to get the error message and the number of occurances like in number 1b, after that I will use `echo` to print the result from the `infoerror`, after that I will use do while to seperate the number and the name of the message, first I will get the number of occurances first by using `cut -d " " -f1` and after that I will get the error message by using `cut -d " " -f2-`, after that I will use `echo` to print the result of the `nameerror` and `totalerror`, after using do while, the last thing to do is to use command `sed` to insert the result and choose where do I want to print the result.
+
+## SOAL 2
+
+**D. Region that has the least total profit and the total profit of that region**
+
+We need to find the region that has the least total profit that shown in TokoShiSop 
+
+Download Laporan-TokoShiSop.tsv which is the input data, and make one folder with the code
+
+Find the field ``-F " " ``
+
+We need `` {x[$13]+=$21} to fetch from 13 coloumn which is the region section, and then all the region profit will counted ``END {for(Answer in x)``
+
+Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``tail -1`` to choose one of the least data
+
+Print the Answer with ``print Answer" "x[Answer]`` The output will bring out the least total profit & the region
+
+
