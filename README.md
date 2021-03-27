@@ -24,6 +24,8 @@ cat syslog.log|cut -d ":" -f4
 To solve the problem from number 1a, I use command `cut`, so I can get the information only from the third `:` until the fourth `:`, because there are no other `:` after the third one, the information that will be printed according to the syslog.log file is from the log type until the username, and that's the exactly information that problem number 1a want to be printed.
 
 **b. Show All Error Messages With The Number Of Occurrences**
+
+In number 1B, we need to show all the error messages with the number of occurances
 ```
 cat syslog.log|grep ERROR|cut -d ":" -f4|cut -d "(" -f1|sort|uniq -c
 ```
@@ -31,6 +33,8 @@ cat syslog.log|grep ERROR|cut -d ":" -f4|cut -d "(" -f1|sort|uniq -c
 To solve the problem from number 1b, first I will use command grep ERROR, so it will only show the line that only have ERROR text in it, next I will use command cut, so I can get the information only from the third `:` until the fourth `:`, because there are no other `:` after the third one, the information that I will get according to the `syslog.log` file is from the log type until the username, after that I will use command cut again, so I can only get the information from the 0 zero `(` until the first `(`, so then it will only printed the log type and log messages, after that I will use command `sort` so it will be sorted by alphabetical order and it will be easier to read, and lastly I will use command `uniq -c` so it will show the number of repeated log type and messages.
 
 **c. Show The Number Of Occurrences Of The Error And Info For Each User**
+
+In number 1C, we need to show the number of occurances of the error and info for each user
 ```
 Error: cat syslog.log|grep ERROR|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
 Info: cat syslog.log|grep INFO|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
