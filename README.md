@@ -66,7 +66,7 @@ We need to find the region that has the least total profit that shown in the Lap
 
 Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
 
-Find the field ``-F " " ``
+To inform the field ``-F " " ``
 
 We need to calculate ``{x[$13]+=$21}`` to fetch from 13 coloumn which is the region section, and then all the region that we want to count the profit ``END {for(Answer in x)``
 
