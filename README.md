@@ -62,13 +62,13 @@ To solve the problem from number 1d, I will first declare a new variable named `
 
 **D. Region that has the least total profit and the total profit of that region**
 
-We need to find the region that has the least total profit that shown in TokoShiSop 
+We need to find the region that has the least total profit that shown in the Laporan-TokoShiSop.tsv
 
-Download Laporan-TokoShiSop.tsv which is the input data, and make one folder with the code
+Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make
 
 Find the field ``-F " " ``
 
-We need `` {x[$13]+=$21} to fetch from 13 coloumn which is the region section, and then all the region profit will counted ``END {for(Answer in x)``
+We need to calculate ``{x[$13]+=$21}`` to fetch from 13 coloumn which is the region section, and then all the region that we want to count the profit ``END {for(Answer in x)``
 
 Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``tail -1`` to choose one of the least data
 
