@@ -60,18 +60,18 @@ To solve the problem from number 1d, I will first declare a new variable named `
 
 ## SOAL 2
 
-**D. Region that has the least total profit and the total profit of that region**
+**D. Region that has the least total profit and The total profit of that region**
 
 We need to find the region that has the least total profit that shown in the Laporan-TokoShiSop.tsv
 
-Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make
+Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
 
 Find the field ``-F " " ``
 
 We need to calculate ``{x[$13]+=$21}`` to fetch from 13 coloumn which is the region section, and then all the region that we want to count the profit ``END {for(Answer in x)``
 
-Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``tail -1`` to choose one of the least data
+Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``tail -1`` to choose one of the least data.
 
-Print the Answer with ``print Answer" "x[Answer]`` The output will bring out the least total profit & the region
+Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the least total profit & the region.
 
 
