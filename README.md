@@ -60,7 +60,7 @@ To solve the problem from number 1d, I will first declare a new variable named `
 
 ## SOAL 2
 
-**D. Region that has the least total profit and The total profit of that region**
+**d. Region that has the least total profit and The total profit of that region**
 
 We need to find the region that has the least total profit that shown in the Laporan-TokoShiSop.tsv
 
