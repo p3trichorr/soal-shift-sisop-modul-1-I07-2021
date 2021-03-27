@@ -30,6 +30,7 @@ To solve the problem from number 1B, first I will use command grep ERROR, so it 
 1C Show The Number Of Occurrences Of The Error And Info For Each User
 
 Error: cat syslog.log|grep ERROR|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
+
 Info: cat syslog.log|grep INFO|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
 
 To solve the problem from number 1C, I do it one by one, so the error and info for each user will be seperated, the first one is for the error, first I will use command grep ERROR, so it will only show the line that only have ERROR text in it, after that I will use command cut, so I can only get the information from the first "(" to the second "(", but because there are no other "(", I will get the information until the end of the line, the next thing I do is I will use command cut again, so I can only get the information from the zero ")" to the first ")", I use this cut so it will only print the username not username with ")", after that I will use command sort so it will be sorted by alphabetical order and it will be easier to read, and lastly I will use command uniq -c so it will show the number of repeated log type and log messages. And for the info for each user, the way I solve it is the same like for the error, the difference is only at command grep, because we only want tho show the line that only have INFO text in it.
