@@ -74,4 +74,26 @@ Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``
 
 Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the least total profit & the region.
 
+## PROBLEM 3
 
+**a. Download From the given website and its log**
+
+In number 3A, the problem wanted us to download a couple of imaga from a website and make a log out of it
+```
+#!/bin/bash
+for (( i=1; i<=23; i++ ))
+do
+wget "https://loremflickr.com/320/240/cat" -O /home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_$i.jpg  2>&1 | tee >> /home/zulu/Documents/Modul_1/Soal_3/Foto.log
+done
+```
+
+The shell code above starts with loop that ends when there are 23 images downloaded from the web `https://loremflickr.com/320/240/cat` using the `wget` and `-O` command to write the images here `/home/zulu/Documents/Modul_1/Soal_3/Kucing` using the format `Kumpulan_$i.jpg`. The`2>&1` command indicates that the standard error `2>` is redirected to the same file descriptor that is pointed by standard output `&1`. The code was then continued with`tee >>` to write the log messages to a directory which is `/home/zulu/Documents/Modul_1/Soal_3/Foto.log`
+
+**b. Schedule the download at a certain time**
+
+In number 3B, the problem wants us to download the kitten images on a schdule
+```
+0 20 */7,*/2 * * bash /home/zulu/Documents/Modul_1/Soal_3/Kucing/soal_3a.sh | tee >> /home/zulu/Documents/Modul_1/Soal_3/Kucing/$(%d/%m/%Y).txt
+```
+
+The code starts with the date it is scheduled to run  a bash in which `0 20 */7,*/2 * *` it is for the first on every 7th and 2nd of the month at the 8th PM in the evening. the `bash` command was then written to run the `.sh` file in the `/home/zulu/Documents/Modul_1/Soal_3/Kucing/soal_3a.sh`. The `tee >>` command the writes the log messages to a directory in the `/home/zulu/Documents/Modul_1/Soal_3/Kucing/$(%d/%m/%Y).txt` with a DDMMYYY format.
