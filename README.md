@@ -18,10 +18,10 @@ Zulfiqar Rahman Aji (05111942000019)
 
 In number 1a, we need to collect the information from syslog.log. The information includes, log type (INFO/ERROR), log messages, and the username on each log line.
 ```
-cat syslog.log|cut -d ":" -f4
+cat syslog.log|grep -o '[ERROR|INFO].*'|cut -d " " -f1-
 ```
 
-To solve the problem from number 1a, I use command `cut`, so I can get the information only from the third `:` until the fourth `:`, because there are no other `:` after the third one, the information that will be printed according to the syslog.log file is from the log type until the username, and that's the exactly information that problem number 1a want to be printed.
+To solve the problem from number 1a, I use command `grep -o`  with `[ERROR|INFO]` and `.*` so it will get every line that have ERROR or INFO text in it, after that I will use command `cut`, so I will only get the information from the 0 `" "` until the first `" "`, but since I use `-` between the `f1`, it will print the entire line not only until the first `" "`.
 
 **b. Show All Error Messages With The Number Of Occurrences**
 
@@ -30,7 +30,7 @@ In number 1b, we need to show all the error messages with the number of occuranc
 cat syslog.log|grep -o 'ERROR.*'|cut -d " " -f2-|cut -d "(" -f1|sort|uniq -c|sort -nr
 ```
 
-To solve the problem from number 1b, first I will use command grep ERROR with `-o` and `.*` so it will only take the line with the exact ERROR text and it will take the entire line because of the `.*`, next I will use command cut, so I can get only the log message and without the log type and I also use `-` between the `f2` because I want print the entire line, after that I will use command cut again, so I can only get the information from the zero `(` until the first `(`, so then it will only printed the log type and log messages, after that I will use command `sort` so it will be sorted by alphabetical order and it will be easier to read, after that I will use command `uniq -c` so it will show the number of repeated log type and messages, lastly I will use command sort again with `-nr` so it will order by the most error message.
+To solve the problem from number 1b, first I will use command `grep` ERROR with `-o` and `.*` so it will only take the line with the exact ERROR text and it will take the entire line because of the `.*`, next I will use command cut, so I can get only the log message and without the log type and I also use `-` between the `f2` because I want print the entire line, after that I will use command cut again, so I can only get the information from the zero `(` until the first `(`, so then it will only printed the log type and log messages, after that I will use command `sort` so it will be sorted by alphabetical order and it will be easier to read, after that I will use command `uniq -c` so it will show the number of repeated log type and messages, lastly I will use command sort again with `-nr` so it will order by the most error message.
 
 **c. Show The Number Of Occurrences Of The Error And Info For Each User**
 
