@@ -60,6 +60,16 @@ To solve the problem from number 1d, I will first declare a new variable named `
 
 ## PROBLEM 2
 
+**c. Customer segment and The number of transactions with the least amount of transactions**
+
+We need to find the segment has the least amount of transactions that shown in the Laporan-TokoShiSop.tsv
+
+Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
+
+To inform the filed ``-F " " ``
+
+
+
 **d. Region that has the least total profit and The total profit of that region**
 
 We need to find the region that has the least total profit that shown in the Laporan-TokoShiSop.tsv
