@@ -2,7 +2,7 @@
 
 #1A Show the information from syslog.log
 echo "Show the information from syslog.log:"
-cat syslog.log|cut -d ":" -f4
+cat syslog.log|grep -o '[ERRORO|INFO].*'|cut -d " " -f1-
 
 #1B Show all error messages with the number of occurrences
 echo "Show all error messages with the number of occurrences:"
