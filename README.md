@@ -61,6 +61,17 @@ To solve the problem from number 1d, I will first declare a new variable named `
 ## PROBLEM 2
 
 **c. Customer segment and The number of transactions with the least amount of transactions**
+```
+##!/bin/bash
+
+echo "SOAL 2C"
+echo "Customer segment and The number of transaction with the least amount of transaction :"
+awk -F "\t" '{if ($8 != "Segment") x[$8]++$18}
+END {for(Answer in x)
+	print Answer " "x[Answer]}
+'  Laporan-TokoShiSop.tsv | sort -nr | head -1
+
+```
 
 We need to find the segment has the least amount of transactions that shown in the Laporan-TokoShiSop.tsv
 
@@ -71,6 +82,18 @@ To inform the filed ``-F " " ``
 
 
 **d. Region that has the least total profit and The total profit of that region**
+```
+
+#!/bin/bash
+
+echo "NOMOR 2D"
+echo "Region that has the least total profit and the total profit of that region :"
+awk -F "\t" ' {x[$13]+=$21}
+END {for(Answer in x)
+	print Answer " "x[Answer]}
+' Laporan-TokoShiSop.tsv | sort -nr | tail -1 
+
+```
 
 We need to find the region that has the least total profit that shown in the Laporan-TokoShiSop.tsv
 
