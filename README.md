@@ -79,7 +79,13 @@ Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder
 
 To inform the filed ``-F " " ``
 
+We need to calculate all the row of our segment column, except column one "Segment" which is the head of the coloumn so we need to write ``if ($8 != "Segment")`` on purpose "Segment 0" cannot be calculated.
 
+We count with this calculation ``{x[$8]++$18}`` to fetch from the column 8 is Segment and column 18 is the Sales. and then ``END {for(Answer in x)`` 
+
+Dont forget use ``sort -nr`` to sort the data from biggest to least data, and ``head -1`` to choose one of the least data.
+
+Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the least total amount and the segment.
 
 **d. Region that has the least total profit and The total profit of that region**
 
