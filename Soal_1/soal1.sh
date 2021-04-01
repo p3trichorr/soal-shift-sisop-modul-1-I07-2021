@@ -34,4 +34,4 @@ do
   totalinfo=`cat syslog.log|grep -o "INFO.*($user)"| wc-l`
   totalerror=`cat syslog.log|grep -o "ERROR.*($user)"| wc-l`
   echo "$user,$totalinfo,$totalerror"
-done|sed '1 i\Username, INFO, ERROR' > user_statistic.csv
+done|sed '1 i\Username,INFO,ERROR' > user_statistic.csv
