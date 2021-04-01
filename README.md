@@ -94,11 +94,11 @@ We need to find list customer names in Albuquerque while doing some transaction 
 
 Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
 
-To inform the filed ``-F " " ``
+To inform the field ``-F " " ``
 
-We need to fetch the data from Order ID in column 2 ``$2 ~ /2017/`` when the early shown CA-2017 which is for the transaction.
+We need to fetch the data from Order ID in column 2 ``$2 ~ /2017/`` when the early shown CA-2017 which is for the 2017 transaction.
 
-We need to fetch the data from ``($10 == "Albuquerque")`` in 10 coloumn which is the city section, and then all keep the customer name in array ``x[$7]``
+We need to fetch the data from ``($10 == "Albuquerque")`` in 10 coloumn which is the city section, and then keep the customer name in array ``x[$7]``
 
 Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the Customer name.
 
@@ -119,7 +119,7 @@ We need to find the segment has the least amount of transactions that shown in t
 
 Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
 
-To inform the filed ``-F " " ``
+To inform the field ``-F " " ``
 
 We need to calculate all the row of our segment column, except column one "Segment" which is the head of the coloumn so we need to write ``if ($8 != "Segment")`` on purpose "Segment 0" cannot be calculated.
 
