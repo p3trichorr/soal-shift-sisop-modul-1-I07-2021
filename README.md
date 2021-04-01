@@ -77,6 +77,31 @@ To solve the problem from number 1e, I will first declare a new variable named `
 
 ## PROBLEM 2
 
+**b. List of customer names on the 2017 transaction in Albuquerque**
+
+``
+##!/bin/bash
+
+echo "SOAL 2B"
+echo "List of customer names on the 2017 transaction in Albuquerque :"
+awk -F "\t" '$2 ~ /2017/ {if ($10 == "Albuquerque") x[$7]}
+END {for(Answer in x)
+	print x[Answer]" "Answer}
+' Laporan-TokoShiSop.tsv 
+``
+
+We need to find list customer names in Albuquerque while doing some transaction in 2017, data shown in the Laporan-TokoShiSop.tsv
+
+Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
+
+To inform the filed ``-F " " ``
+
+We need to fetch the data from Order ID in column 2 ``$2 ~ /2017/`` when the early shown CA-2017 which is for the transaction.
+
+We need to fetch the data from ``($10 == "Albuquerque")`` in 10 coloumn which is the city section, and then all keep the customer name in array ``x[$7]``
+
+Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the Customer name.
+
 **c. Customer segment and The number of transactions with the least amount of transactions**
 
 ```
