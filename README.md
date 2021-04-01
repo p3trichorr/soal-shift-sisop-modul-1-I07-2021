@@ -77,6 +77,35 @@ To solve the problem from number 1e, I will first declare a new variable named `
 
 ## PROBLEM 2
 
+**a. Knowing Row ID and the largest profit percentage**
+
+```
+##!/bin/bash
+
+echo "SOAL 2A"
+echo "Knowing Row ID and The Largest profit percentage :"
+awk -F "\t" 'BEGIN {max=0} 
+$1 !~ /"Row ID"/ {x[$1] = $21/($18-$21)*100
+if(max <= x[$1]){
+	max = x[$1]; name = $1}}
+END {print name, max"%"}
+' Laporan-TokoShiSop.tsv
+```
+
+We need to find Row ID  and the largest profit percentage (if the largest profit percentage is more than 1 and take the largest Row ID. We can found from this calculation ``Profit Percentage = (Profit : Cost Price) * 100`` the data shown in the Laporan-TokoShiSop.tsv
+
+Download ``Laporan-TokoShiSop.tsv`` which is the input data, and make one folder with the code that we want to make.
+
+To inform the field ``-F " " ``
+
+``BEGIN {max=0}`` To can reach the maximum value.
+
+We need to fetch the data from ``$1 !~ /"Row ID"/`` in 1 coloumn which is the Row ID Section but without the word "Row ID" on purpose we just need the value, and then calculation that formula in here ``x[$1] = $21/($18-$21)*100``
+
+Analization with this ``max = x[$1]; name = $1``
+
+Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the Customer name.
+
 **b. List of customer names on the 2017 transaction in Albuquerque**
 
 ```
