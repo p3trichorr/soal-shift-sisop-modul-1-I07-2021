@@ -100,11 +100,11 @@ To inform the field ``-F " " ``
 
 ``BEGIN {max=0}`` To can reach the maximum value.
 
-We need to fetch the data from ``$1 !~ /"Row ID"/`` in 1 coloumn which is the Row ID Section but without the word "Row ID" on purpose we just need the value, and then calculation that formula in here ``x[$1] = $21/($18-$21)*100``
+We need to fetch the data from ``$1 !~ /"Row ID"/`` in 1 coloumn which is the Row ID Section but without the word "Row ID" on purpose we just need the value, and then calculation that formula in here ``x[$1] = $21/($18-$21)*100`` same like Row ID = Profit/Sales-Profit x 100.
 
-Analization with this ``max = x[$1]; name = $1``
+Analization with this ``max = x[$1]`` for the calculation ``name = $1`` for the number of Row ID
 
-Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the Customer name.
+Print the Answer with ``print name, max"%"`` The output will bring out the Row ID with their Presentage.
 
 **b. List of customer names on the 2017 transaction in Albuquerque**
 
