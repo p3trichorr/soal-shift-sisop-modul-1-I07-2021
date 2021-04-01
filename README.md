@@ -79,7 +79,7 @@ To solve the problem from number 1e, I will first declare a new variable named `
 
 **b. List of customer names on the 2017 transaction in Albuquerque**
 
-``
+```
 ##!/bin/bash
 
 echo "SOAL 2B"
@@ -88,7 +88,7 @@ awk -F "\t" '$2 ~ /2017/ {if ($10 == "Albuquerque") x[$7]}
 END {for(Answer in x)
 	print x[Answer]" "Answer}
 ' Laporan-TokoShiSop.tsv 
-``
+```
 
 We need to find list customer names in Albuquerque while doing some transaction in 2017, data shown in the Laporan-TokoShiSop.tsv
 
