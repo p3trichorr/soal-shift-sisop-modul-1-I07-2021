@@ -25,7 +25,7 @@ To solve the problem from number 1a, I use command `grep -o`  with `[ERROR|INFO]
 
 **b. Show All Error Messages With The Number Of Occurrences**
 
-In number 1b, we need to show all the error messages with the number of occurances
+In number 1b, we need to show all the error messages with the number of occurances.
 ```
 cat syslog.log|grep -o 'ERROR.*'|cut -d " " -f2-|cut -d "(" -f1|sort|uniq -c|sort -nr
 ```
@@ -34,7 +34,7 @@ To solve the problem from number 1b, first I will use command `grep` ERROR with 
 
 **c. Show The Number Of Occurrences Of The Error And Info For Each User**
 
-In number 1c, we need to show the number of occurances of the error and info for each user
+In number 1c, we need to show the number of occurances of the error and info for each user.
 ```
 Error: cat syslog.log|grep ERROR|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
 Info: cat syslog.log|grep INFO|cut -d "(" -f2|cut -d ")" -f1|sort|uniq -c
@@ -44,7 +44,7 @@ To solve the problem from number 1c, I do it one by one, so the error and info f
 
 **d. Error Message**
 
-In number 1d, we need to display the error message including the log message with the number of occurrences and will be sorted based on the message that have the most error
+In number 1d, we need to display the error message including the log message with the number of occurrences and will be sorted based on the message that have the most error in a csv file.
 ```
 infoerror:`cat syslog.log|grep -o 'ERROR.*'|cut -d " " -f2-|cut -d "(" -f1|sort|uniq -c|sort -nr`
 echo "$infoerror"|
@@ -56,7 +56,24 @@ do
 done|sed '1 i\Error,Count' > error_message.csv
 ```
 
-To solve the problem from number 1d, I will first declare a new variable named `infoerror` and I use it as a function to get the error message and the number of occurances like in number 1b, after that I will use `echo` to print the result from the `infoerror`, after that I will use do while to seperate the number and the name of the message, first I will get the number of occurances first by using `cut -d " " -f1` and after that I will get the error message by using `cut -d " " -f2-`, after that I will use `echo` to print the result of the `nameerror` and `totalerror`, after using do while, the last thing to do is to use command `sed` to insert the result and choose where do I want to print the result.
+To solve the problem from number 1d, I will first declare a new variable named `infoerror` and I use it as a function to get the error message and the number of occurances like in number 1b, after that I will use command `echo` to print the result from the `infoerror`, after that I will use do while to seperate the number and the name of the message, first I will get the number of occurances first by using `cut -d " " -f1` and after that I will get the error message by using `cut -d " " -f2-`, after that I will use `echo` to print the result of the `nameerror` and `totalerror`, after using do while, the last thing to do is to use command `sed` to insert the result and choose where do I want to print the result.
+
+**e. User Statistic**
+
+In number 1e, we need to display the username with the number the number of occurances of the error and info for each user in a csv file.
+```
+echo "user_statistic.csv have been made"
+username=`cat syslog.log|cut -d "(" -f2|cut -d ")" -f1|sort|uniq`
+echo "$username"|
+while read user
+do
+  totalinfo=`cat syslog.log|grep -o "INFO.*($user)"| wc-l`
+  totalerror=`cat syslog.log|grep -o "ERROR.*($user)"| wc-l`
+  echo "$user,$totalinfo,$totalerror"
+done|sed '1 i\Username,INFO,ERROR' > user_statistic.csv
+```
+
+To solve the problem from number 1e, I will first declare a new variable named `username` to show the username that I want to display using th function in number 1c, after that I will use command `echo` to print the result from `username`, after that I will use do whilt to get the info and error for each username, first I will get the number of info for each user using command `grep -o` with `"INFO.*($user)"` so it will take the username with info text in it, after that I will use command `wc -l`, so it will count the same line if there are some repeated username and ERROR text, the same way goes for the error, the only thing that make it different is the comman `grep -o` is with `"ERROR.*($user)`, after that I will use command `echo` to print the username, info, and error, after using do while, the last thing to do is to use command `sed` to insert the result and choose where do I want to print the result.
 
 ## PROBLEM 2
 
