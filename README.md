@@ -189,14 +189,23 @@ Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the
 
 In number 3A, the problem wanted us to download a couple of imaga from a website and make a log out of it
 ```
-#!/bin/bash
-for (( i=1; i<=23; i++ ))
+for((i=0;i<23;i=i+1))
 do
-wget "https://loremflickr.com/320/240/cat" -O /home/zulu/Documents/Modul_1/Soal_3/Kucing/Kumpulan_$i.jpg  2>&1 | tee >> /home/zulu/Documents/Modul_1/Soal_3/Foto.log
+	let numb=$i+1
+	wget -a Foto.log -O Koleksi_$numb 'https://loremflickr.com/320/240/kitten'
+	test[$i]="$(md5sum Koleksi_$numb | awk '{print $1;}')"
+	for((compare=i-1;compare>=0;compare=compare-1))
+	do
+		if [[ "${test[$i]}" == "${test[$compare]}" ]];
+		then
+			rm  Koleksi_$numb
+			numb=$((numb-1))
+		fi
+	done
 done
 ```
 
-The shell code above starts with loop that ends when there are 23 images downloaded from the web `https://loremflickr.com/320/240/cat` using the `wget` and `-O` command to write the images here `/home/zulu/Documents/Modul_1/Soal_3/Kucing` using the format `Kumpulan_$i.jpg`. The`2>&1` command indicates that the standard error `2>` is redirected to the same file descriptor that is pointed by standard output `&1`. The code was then continued with`tee >>` to write the log messages to a directory which is `/home/zulu/Documents/Modul_1/Soal_3/Foto.log`
+The shell code above starts with a loop that ends at the 23rd image, and the `let numb=$i+1` is to start the count for the number at 1. `wget` and the link at the end is a command to get the images form the website, while `-a` before the Foto.log is to direct the logs into the Foto.log folder and `-O` command is to name the images with that format. The `test[$i]="$(md5sum Koleksi_$numb | awk '{print $1;}')"`line is to create a test by taking the iamge 
 
 **b. Schedule the download at a certain time**
 
