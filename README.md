@@ -185,9 +185,9 @@ Print the Answer with ``Print Answer" "x[Answer]`` The output will bring out the
 
 ## PROBLEM 3
 
-**a. Download From the given website and its log**
+**a. Download from the given website and its log**
 
-In number 3A, the problem wanted us to download a couple of imaga from a website and make a log out of it
+In number 3A, the problem wanted us to download a couple of image from a website and make a log out of it
 ```
 for((i=0;i<23;i=i+1))
 do
@@ -205,13 +205,64 @@ do
 done
 ```
 
-The shell code above starts with a loop that ends at the 23rd image, and the `let numb=$i+1` is to start the count for the number at 1. `wget` and the link at the end is a command to get the images form the website, while `-a` before the Foto.log is to direct the logs into the Foto.log folder and `-O` command is to name the images with that format. The `test[$i]="$(md5sum Koleksi_$numb | awk '{print $1;}')"`line is to create a test by taking the iamge 
+The shell code above starts with a loop that ends at the 23rd image, and the `let numb=$i+1` is to start the count for the number at 1. `wget` and the link at the end is a command to get the images form the website, while `-a` before the Foto.log is to direct the logs into the Foto.log folder and `-O` command is to name the images with that format. The `test[$i]="$(md5sum Koleksi_$numb | awk '{print $1;}')"`line is to create a test by taking the image hash using `md5sum` and printing it using the `awk` command. The next for loop is to compare the current image with the previous images so it will not be the same using the `if [[ "${test[$i]}" == "${test[$compare]}" ]];` and remove the current image using `rm Koleksi_$numb` and decrease the numb variable by 1
 
 **b. Schedule the download at a certain time**
 
 In number 3B, the problem wants us to download the kitten images on a schdule
 ```
-0 20 */7,*/2 * * bash /home/zulu/Documents/Modul_1/Soal_3/Kucing/soal_3a.sh | tee >> /home/zulu/Documents/Modul_1/Soal_3/Kucing/$(%d/%m/%Y).txt
-```
+$(mkdir $(date +"%d-%m-%Y"))
 
-The code starts with the date it is scheduled to run  a bash in which `0 20 */7,*/2 * *` it is for the first on every 7th and 2nd of the month at the 8th PM in the evening. the `bash` command was then written to run the `.sh` file in the `/home/zulu/Documents/Modul_1/Soal_3/Kucing/soal_3a.sh`. The `tee >>` command the writes the log messages to a directory in the `/home/zulu/Documents/Modul_1/Soal_3/Kucing/$(%d/%m/%Y).txt` with a DDMMYYY format.
+$(mv Koleksi* /home/zulu/Documents/Modul_1/Soal_3/Koleksi/$(date +"%d-%m-%Y))
+$(mv Foto.log /home/zulu/Documents/Modul_1/Soal_3/Koleksi/$(date +"%d-%m-%Y))
+```
+The first shell code is to make a directory using `mkdir` for the file and move all the images and the log into that directory with the name format
+
+```
+0 20 1-31/7,2-31/4 * * /home/zulu/Documents/Modul_1/Soal_3/Soal3a.sh
+0 20 1-31/7,2-31/4 * * /home/zulu/Documents/Modul_1/Soal_3/Soal3b.sh
+```
+The cron tab code in the above will run at the fisrt on every 7 days and second every 4 days at 8 pm, running the `Soal3a.sh` and `Soal3b.sh` code.
+
+**c. Download rabit images afetr the kitten**
+```
+day=$(date "+%--j")
+let mod=$day%2
+case "$mod" in
+	"0")
+	$(mkdir Kucing_$(date +"%d-%m-%Y"))
+	b=1
+	while [ $b -le 23 ]
+	do
+		wget -O /home/zulu/Documents/Modul_1/Soal_3/Kucing_$(date +"%d-%m-%Y")/Koleksi_$b 'http://loremflickr.com/320/240/kitten'
+		b=$((b+1))
+	done
+	;;
+	"1")
+	$(mkdir Kelinci_$(date +"%d-%m-%Y"))
+	b=1
+	while [ $b -le 23 ]
+	do
+		wget -O /home/zulu/Documents/Modul_1/Soal_3/Kelinci_$(date +"%d-%m-%Y")/Koleksi_$b 'http://loremflickr.com/320/240/bunny'
+		b=$((b+1))
+	done
+	;;
+esac
+```
+The code first define the date with the `day=$(date "+%--j")` command and divide it with 2. If the date is odd the code will make the Kucing directory and download kitten images, else if the day is even, the kelinci directory will be made and rabit images will be downloaded.
+
+**d. Make the folder into zip and put pass word on it**
+```
+password=$(date +"%d%m%Y")
+
+zip -r -P $password Koleksi.zip Kucing_* Kelinci_*
+rm -r Kucing_* Kelinci_*
+```
+We first declare the password as today's date as it is what the problem wants, then using the `zip` command continued with `-r` all `Kucing` and `Kelinci` folder will searched and zipped with `-P` as a command to add password  and `$password` as the password. `rm -r Kucing_* Kelinci_*` is also used to delete any the folder so steven would not be able to find them.
+
+**e. Zip and unzip the collection on a schedule**
+```
+0 7 * * 1-5 /home/zulu/Documents/Modul_1/Soal_3/Soal3d.sh
+0 18 * * 1-5 unzip -P $(date +"%d%m%Y") Koleksi.zip && rm Koleksi.zip
+```
+the crontab above told us to run the `Soal3d.sh` code to zip the collection from Monday to Friday and at 7 am to 6 pm and unzip the collection at 6 pm while removing the zip file.
