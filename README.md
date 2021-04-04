@@ -217,6 +217,7 @@ $(mv Koleksi* /home/zulu/Documents/Modul_1/Soal_3/Koleksi/$(date +"%d-%m-%Y))
 $(mv Foto.log /home/zulu/Documents/Modul_1/Soal_3/Koleksi/$(date +"%d-%m-%Y))
 ```
 The first shell code is to make a directory using `mkdir` for the file and move all the images and the log into that directory with the name format
+![Cron tab 1](https://user-images.githubusercontent.com/68783399/113503550-ccc62680-955c-11eb-8ae9-9e545cadf1a6.PNG)
 
 ```
 0 20 1-31/7,2-31/4 * * /home/zulu/Documents/Modul_1/Soal_3/Soal3a.sh
@@ -261,6 +262,7 @@ rm -r Kucing_* Kelinci_*
 We first declare the password as today's date as it is what the problem wants, then using the `zip` command continued with `-r` all `Kucing` and `Kelinci` folder will searched and zipped with `-P` as a command to add password  and `$password` as the password. `rm -r Kucing_* Kelinci_*` is also used to delete any the folder so steven would not be able to find them.
 
 **e. Zip and unzip the collection on a schedule**
+![Cron tab 2](https://user-images.githubusercontent.com/68783399/113503555-d485cb00-955c-11eb-99fd-d379eaf62c18.PNG)
 ```
 0 7 * * 1-5 /home/zulu/Documents/Modul_1/Soal_3/Soal3d.sh
 0 18 * * 1-5 unzip -P $(date +"%d%m%Y") Koleksi.zip && rm Koleksi.zip
